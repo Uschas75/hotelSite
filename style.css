@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat:wght@300&family=Spectral:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+/*font-family: 'Crimson Text', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Spectral', serif;
+#5B0A13  #D1A32B #FED24B  #A8001A*
+font-family: 'Noto Sans JP', sans-serif;*/
+:root{
+   --lightTia:	#7dc580c0;
+   --darkGreen:	 rgba(87, 190, 91, 0.753) ;
+   --darkTia:	#4caf50;
+   --tia:#5eb762;
+   --lighterTia: #ccf5cec5;
+   --titleColor:rgb(182, 166, 24);
+}
+.titleFont{
+    font-family:'Montserrat', sans-serif;
+    font-size:60px;
+    font-weight: bold;
+}
+.subTitleFont{
+    font-family:'Montserrat', sans-serif;
+    font-size:50px;
+    padding-bottom:20px;
+}
+.highLightFont{
+    font-family: 'Spectral', serif;
+    font-size:30px;
+    color:var(--titleColor)
+}
+.titleColor{
+    color:var(--titleColor);
+}
+
+.regularFont{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:20px;
+}
+
+.lightTia{
+    background-color: var(--lightTia);
+}
+.customBtn{
+    background-color: var(--darkTia)!important;
+}
+.customBtn:hover{
+    background-color: var(--lightTia)!important;
+    color:white;
+}
+.navBackgroundColor{
+    background-color: var(--lighterTia);
+}
+.margin{
+    margin-top:140px;
+}
+.textColor{
+    color:white;
+}
+/*navbar and header settings*/
+
+.headerNavFont{
+    font-family: 'Crimson Text', serif;
+    font-size:20px;
+}
+/*\navbar and header settings*/
+
+/*welcome section*/
+.vibrantColor{
+    color:white;
+    font-weight: bold;
+    background-color: var(--lightTia);
+    padding-top:1.8rem;
+    padding-left:1.8rem;
+    border:3px solid var(--titleColor);
+}
+
+.img{
+    background-image: url("https://i.postimg.cc/3NyZXbkx/beige-concrete-building-3126553.jpg");
+    background-position:left;
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px;
+}
+.img2{
+    background-image: url("https://i.postimg.cc/jd7XCmV8/woman-soaking-on-the-swimming-pool-3225531.jpg");
+    background-position-x: 75%;
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px;
+}
+
+
+
+
+/*border animation */
+
+.hotelDetails{
+    box-shadow:5px 10px 15px var(--darkGreen);
+}
+
+.detailsPosition:before{
+    position: absolute;
+    content:"";
+    height:0;
+    width:0;
+    border: 4px solid transparent;
+    left:0;
+    bottom:0;
+    box-sizing: border-box;
+}
+
+.detailsPosition:hover:before{
+    height:100%;
+    width:100%;
+    border: 4px solid var(--darkGreen);
+    border-right:none;
+    border-bottom:none;
+    transition:height 0.3s linear,
+                width 0.3s linear 0.3s;
+}
+
+.detailsPosition:after{
+    position: absolute;
+    content:"";
+    height:0;
+    width:0;
+    border: 4px solid transparent;
+    top:0;
+    right:0;
+    box-sizing: border-box;
+}
+
+.detailsPosition:hover:after{
+    height:100%;
+    width:100%;
+    border: 4px solid var(--darkGreen);
+    border-left:none;
+    border-top:none;
+    transition:height 0.3s linear .6s,
+                width 0.3s linear .9s;
+}
+
+/*border animation */
+/*plans*/
+.customImage{
+    padding:1rem;
+    transition: .3s;
+}
+.customImage:hover{
+    position: relative;
+    left:auto;
+    right:auto;
+    /* top:auto;
+    bottom: auto; */
+    
+    transform:scale(1.1);
+    z-index:2;
+    box-shadow: 0px 2px 20px #fff;
+}
+.place2:hover, .place1:hover , .place3:hover , .place4:hover{
+    opacity:1;    
+}
+
+
+.place1{
+    background-image: url("https://i.postimg.cc/jqNsrk0Q/nature-forest-trees-park-38136.jpg");
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    opacity: 0.5;
+    transition:.3s;
+    
+}
+
+.place2{
+    background-image: url("https://i.postimg.cc/J73QvMnN/flight-landscape-nature-sky-36717.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    opacity: 0.5;
+    transition:.3s;
+}
+.place3{
+    background-image: url("https://i.postimg.cc/3RYS5qq4/white-concrete-house-near-body-of-water-under-white-and-blue-1285625.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    opacity: 0.5;
+    transition:.3s;
+}
+.place4{
+    background-image: url("https://i.postimg.cc/7hQmzZZ0/woman-wearing-black-and-white-blouse-and-white-short-2106776.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    opacity: 0.5;
+    transition:.3s;
+}
+/*\plans*/
+/*footer*/
+.footer .margin{
+    margin-top:40px;
+}
+.footer i{
+    background-color: var(--darkGreen);
+    border-radius: 50%;
+    padding:15px;
+    margin:15px;
+    color:white;
+    font-size: 20px;
+}
+/**\footer*/
+/*media quires*/
+@media (min-width: 576px) {
+    /*welcome section*/
+    .img{
+        background-attachment: scroll;
+    }
+    .img2{
+        background-attachment: scroll;
+    }
+    .titleFont{
+        font-size: 38px!important;
+    }
+     /*\welcome section*/
+
+     /*hotel settings*/
+ .afterImage::after{
+    content:"";
+    background-image: url("https://i.postimg.cc/SRQv8P7F/cottages-in-the-middle-of-beach-753626.jpg");
+    position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 97%;
+    bottom:3.8rem;
+    left:29px;
+    z-index:-2;
+    opacity:0.5;
+    }
+
+    
+    .detailsPosition .highLightFont{
+        font-size:1.5rem;
+    }
+    .detailsPosition .regularFont{
+        font-size:1.2rem;
+    }
+    .detailsPosition{
+        padding:1rem;
+    }
+    .detailsPosition i{
+    background-color: var(--darkGreen);
+    border-radius: 50%;
+    padding:10px;
+    margin:10px;
+    color:white;
+    font-size:15px;
+    }
+    .detailsPosition .customBtn{
+        margin:.5rem;
+        font-size: 1.2rem!important;
+        padding: 0!important;
+    }
+    /*\hotel settings*/
+    }
+
+
+
+
+@media (min-width: 768px) {
+   /*welcome section*/
+    .img{
+        background-attachment: fixed;
+    }
+    .img2{
+        background-attachment: fixed;
+    }
+    .titleFont{
+        font-size: 50px!important;
+    }
+    /*welcome section*/
+
+ /*hotel settings*/
+ .afterImage::after{
+    content:"";
+    background-image: url("https://i.postimg.cc/SRQv8P7F/cottages-in-the-middle-of-beach-753626.jpg");
+    position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 93%;
+    height: 97%;
+    bottom:1.8rem;
+    left:0;
+    z-index:-2;
+    opacity:0.5;
+    }
+
+    
+    .detailsPosition .highLightFont{
+        font-size:.8rem;
+    }
+    .detailsPosition .regularFont{
+        font-size:.8rem;
+    }
+    .detailsPosition{
+        padding:0.8rem;
+    }
+    .detailsPosition i{
+    background-color: var(--darkGreen);
+    border-radius: 50%;
+    padding:5px;
+    margin:5px;
+    color:white;
+    font-size:10px;
+    }
+    .detailsPosition .customBtn{
+        margin:.5rem;
+        font-size: .8rem!important;
+        padding: 0!important;
+    }
+    /*\hotel settings*/
+    /*destination*/
+    .customImage .highLightFont{
+        font-size: 20px;
+    }
+    .customImage .regularFont{
+        font-size: 14px;
+    }
+    /*\destination*/
+    /*plan*/
+        .plan .regularFont{
+        font-size:1.2rem;
+        }
+        .plan input{
+        font-size:1rem;
+        padding: .3rem;
+        }
+        .plan .customBtn{
+        font-size: 1.2rem;
+        }
+        
+    /*\plan*/
+     }
+
+
+@media (min-width: 992px) { 
+    .img{
+        background-attachment: fixed;
+    }
+    .img2{
+        background-attachment: fixed;
+    }
+    
+ /*hotel settings*/
+ .afterImage::after{
+    content:"";
+    background-image: url("https://i.postimg.cc/SRQv8P7F/cottages-in-the-middle-of-beach-753626.jpg");
+    position:absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 93%;
+    height: 96%;
+    bottom:2rem;
+    left:0;
+    z-index:-2;
+    opacity:0.5;
+    }
+
+    .detailsPosition .highLightFont{
+        font-size:1.5rem;
+    }
+    .detailsPosition .regularFont{
+        font-size:1rem;
+    }
+    .detailsPosition{
+        padding:1rem;
+    }
+    .detailsPosition i{
+    background-color: var(--darkGreen);
+    border-radius: 50%;
+    padding:10px;
+    margin:10px;
+    color:white;
+    font-size:20px;
+    }
+    /*\hotel settings*/
+    /*plan*/
+    .plan .regularFont{
+    font-size:1.2rem;
+    }
+    .plan input{
+    font-size:1rem;
+    padding: .3rem;
+    }
+    .plan .customBtn{
+    font-size: 1.2rem;
+    }
+    /*\plan*/
+     }
+
+
+
+
+@media (min-width: 1200px) { 
+    .img{
+        background-attachment: fixed;
+    }
+    .img2{
+        background-attachment: fixed;
+    }
+    
+    /*\welcome section*/
+    .afterImage{
+        padding-left:30px;
+    }
+    /*hotel settings*/
+    .afterImage::after{
+        content:"";
+        background-image: url("https://i.postimg.cc/SRQv8P7F/cottages-in-the-middle-of-beach-753626.jpg");
+        position:absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 93%;
+        height: 96%;
+        bottom:4rem;
+        left:0;
+        z-index:-2;
+        opacity:0.5;
+    }
+    .detailsPosition i{
+        background-color: var(--darkGreen);
+        border-radius: 50%;
+        padding:15px;
+        margin:15px;
+        color:white;
+        font-size:30px;
+    }
+    .detailsPosition .customBtn{
+        margin:.5rem;
+        
+        font-size: 1.2rem!important;
+        padding: .5rem!important;
+    }
+    /*\hotel settings*/
+    /*plan*/
+    .plan .regularFont{
+        font-size:1.2rem;
+    }
+    .plan input{
+        font-size:1rem;
+        padding: .3rem;
+    }
+    .plan .customBtn{
+        font-size: 1.2rem;
+    }
+    /*\plan*/
+ }
