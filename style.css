@@ -39,6 +39,7 @@ font-family: 'Noto Sans JP', sans-serif;*/
 
 .lightTia{
     background-color: var(--lightTia);
+    
 }
 .customBtn{
     background-color: var(--darkTia)!important;
@@ -73,24 +74,25 @@ font-family: 'Noto Sans JP', sans-serif;*/
     padding-left:1.8rem;
     
 }
-/* 
-.img{
+.welcomeSection{
+    padding:2rem;
+    margin:4rem;
+    margin-top: 0rem;
+    border-radius: 4px;
     
-    background-position:left;
-    background-repeat: no-repeat;
-    width:100%;
-    height:400px;
 }
-.img2{
-    
-    background-position-x: 75%;
+.welcomeBackground{
+    background-image: url("https://i.postimg.cc/155kN8Jn/man-wearing-white-shirt-brown-shorts-and-green-backpack-672358.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
-    width:100%;
-    height:400px;
-} */
-
-
-
+    background-attachment: fixed;
+    background-position: center;
+}
+.welcomeBackground .titleFont{
+    margin-left:4rem;
+    padding-top:2rem;
+    padding-bottom:1rem;
+}
 
 /*border animation */
 
@@ -141,6 +143,12 @@ font-family: 'Noto Sans JP', sans-serif;*/
 }
 
 /*border animation */
+/*services*/
+.customBorder{
+    border: 3px solid var(--darkGreen);
+    padding:3rem;
+}
+/*\services*/
 /*plans*/
 .customImage{
     padding:1rem;
@@ -334,6 +342,7 @@ font-family: 'Noto Sans JP', sans-serif;*/
         font-size: 14px;
     }
     /*\destination*/
+    
     /*plan*/
         .plan .regularFont{
         font-size:1.2rem;
@@ -398,6 +407,15 @@ font-family: 'Noto Sans JP', sans-serif;*/
     font-size:20px;
     }
     /*\hotel settings*/
+    /*services*/
+    .customBorder{
+        padding:30px!important;
+    }
+    .customBorder .regularFont{
+        font-size: .8rem!important;
+        padding:0!important;
+    }
+    /*\services*/
     /*plan*/
     .plan .regularFont{
     font-size:1.2rem;
