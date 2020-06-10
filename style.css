@@ -212,10 +212,15 @@ font-family: 'Noto Sans JP', sans-serif;*/
 .footer i{
     background-color: var(--darkGreen);
     border-radius: 50%;
-    padding:15px;
-    margin:15px;
+    height:40px;
+    width:40px;
+    padding:10px;
+    margin:10px;
     color:white;
     font-size: 20px;
+}
+.iconBackground{
+    background-color:white;
 }
 /**\footer*/
 /*media quires*/
